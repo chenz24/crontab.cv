@@ -9,6 +9,8 @@
     "build:dev": "vite build --mode development",
     "deploy": "pnpm build && pnpm dlx wrangler deploy",
     "deploy:only": "pnpm dlx wrangler deploy",
+    "deploy:version": "pnpm build && pnpm dlx wrangler versions upload",
+    "deploy:version:only": "pnpm dlx wrangler versions upload",
     "preview": "vite preview",
     "lint": "biome lint .",
     "format": "biome format --write .",
