@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="crontab.cv favicon">
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="oklch(0.5 0.13 265)" />
+  <g fill="none" stroke="oklch(0.99 0.003 250)" stroke-width="6.2" stroke-linecap="round">
+    <path d="M32 18v28" />
+    <path d="M19 24l26 16" />
+    <path d="M45 24L19 40" />
+  </g>
+</svg>
