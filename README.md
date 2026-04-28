@@ -1,8 +1,12 @@
 <p align="center">
-  <img src="https://crontab.cv/favicon.ico" width="64" height="64" alt="crontab.cv logo" />
+  <img src="src/assets/favicon.svg" width="64" height="64" alt="crontab.cv logo" />
 </p>
 
 <h1 align="center">crontab.cv</h1>
+
+<p align="center">
+  English | <a href="README.zh-CN.md">简体中文</a>
+</p>
 
 <p align="center">
   A visual, real-time, timezone-aware cron expression editor.<br/>
@@ -188,6 +192,12 @@ Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more informa
 - [shadcn/ui](https://ui.shadcn.com) — Beautiful, accessible UI components
 - [TanStack](https://tanstack.com) — Full-stack React framework and router
 - [Paraglide JS](https://inlang.com/m/gerre34r/library-inlang-paraglideJs) — Typesafe i18n
+
+## More Projects
+
+- [easing.tools](https://easing.tools) — A visual playground for CSS easing and animation timing functions.
+- [rename.tools](https://rename.tools) — Batch rename files quickly with practical pattern-based rules.
+- [open-awesome.com](https://open-awesome.com) — Curated open-source tools and resources for developers.
 
 ---
 
