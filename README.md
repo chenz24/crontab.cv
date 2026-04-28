@@ -90,6 +90,25 @@ The app will be available at `http://localhost:5173` (or the port shown in the t
 pnpm build
 ```
 
+### Deploy (Cloudflare Workers)
+
+```bash
+# Standard deploy
+pnpm run deploy
+
+# Upload a version (for Cloudflare Versions flow)
+pnpm run deploy:version
+```
+
+If you use Cloudflare Dashboard build settings, set Deploy Command to one of:
+
+```bash
+pnpm run deploy:only
+pnpm run deploy:version:only
+```
+
+Do not use `npx wrangler ...` in this project pipeline.
+
 ### Preview production build
 
 ```bash
