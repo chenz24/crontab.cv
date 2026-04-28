@@ -1,5 +1,7 @@
 import type { Messages } from "@/lib/i18n";
 
+const SHARE_QUERY_PARAM_ALLOWLIST = ["mode", "expr", "tz", "dur"] as const;
+
 // ---------- Helpers ----------
 export function getBrowserTimezone(): string {
   if (typeof Intl === "undefined") return "UTC";
@@ -20,6 +22,23 @@ export async function copyText(text: string): Promise<boolean> {
     }
   }
   return fallbackCopy(text);
+}
+
+export function getShareableUrl(currentHref: string): string {
+  try {
+    const url = new URL(currentHref);
+    const shareUrl = new URL(`${url.origin}${url.pathname}`);
+    for (const key of SHARE_QUERY_PARAM_ALLOWLIST) {
+      const value = url.searchParams.get(key);
+      if (!value) continue;
+      if (key === "dur" && value === "0") continue;
+      shareUrl.searchParams.set(key, value);
+    }
+    if (url.hash) shareUrl.hash = url.hash;
+    return shareUrl.toString();
+  } catch {
+    return currentHref;
+  }
 }
 
 function fallbackCopy(text: string): boolean {
