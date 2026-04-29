@@ -7,6 +7,7 @@ import {
   ScriptOnce,
   Scripts,
 } from "@tanstack/react-router";
+import { Analytics } from "@/components/Analytics";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { ThemeProvider } from "@/components/ThemeProvider";
@@ -294,6 +295,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
     <html lang={HTML_LANG[locale] ?? "en"} suppressHydrationWarning>
       <head>
         <HeadContent />
+        <Analytics />
       </head>
       <body style={{ fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif" }}>
         <ScriptOnce>{themeBootScript}</ScriptOnce>
